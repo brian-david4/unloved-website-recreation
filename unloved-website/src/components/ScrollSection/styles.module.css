@@ -4,4 +4,5 @@
   border-bottom: 2px solid black;
   display: grid;
   place-items: center;
+  flex-shrink: 0;
 }
