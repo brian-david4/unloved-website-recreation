@@ -4,9 +4,9 @@ function App() {
   return (
     <>
       <main>
-        <ScrollSection />
-        <ScrollSection />
-        <ScrollSection />
+        <ScrollSection>scroll Secttion</ScrollSection>
+        <ScrollSection>scroll Secttion</ScrollSection>
+        <ScrollSection>scroll Secttion</ScrollSection>
       </main>
     </>
   );

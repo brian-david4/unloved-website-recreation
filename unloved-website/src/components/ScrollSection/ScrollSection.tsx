@@ -1,7 +1,11 @@
 import styles from "./styles.module.css";
 
-const ScrollSection = () => {
-  return <section className={styles.section}>ScrollSection</section>;
+interface ScrollSectionProps {
+  children?: React.ReactNode;
+}
+
+const ScrollSection = ({ children }: ScrollSectionProps) => {
+  return <section className={styles.section}>{children}</section>;
 };
 
 export default ScrollSection;
