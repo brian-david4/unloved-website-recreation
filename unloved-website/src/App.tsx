@@ -38,10 +38,10 @@ function App() {
               beloved@theunloved.co.uk
             </a>{" "}
             <a href="tel:01162182233">+44 (0)116 218 2233</a>
-            <div className="socials">
+            <span className="socials">
               <a href="https://www.instagram.com/the_un.loved/">instagram</a>{" "}
               <a href="https://x.com/the_un_loved">twitter</a>
-            </div>
+            </span>
           </p>
         </ScrollSection>
         <ScrollSection>

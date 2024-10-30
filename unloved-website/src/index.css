@@ -18,15 +18,17 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 main {
-  position: relative;
   height: 100vh;
   width: 100vw;
-  overflow: scroll;
-  display: flex;
-  flex-direction: column;
+  overflow: scroll !important;
+  scroll-snap-type: y mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  pointer-events: all;
+  z-index: 1;
 }
 a {
   color: white;
