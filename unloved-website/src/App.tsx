@@ -1,7 +1,13 @@
+import ScrollSection from "./components/ScrollSection/ScrollSection";
+
 function App() {
   return (
     <>
-      <main>hello</main>
+      <main>
+        <ScrollSection />
+        <ScrollSection />
+        <ScrollSection />
+      </main>
     </>
   );
 }
