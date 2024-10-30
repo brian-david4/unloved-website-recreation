@@ -4,9 +4,28 @@ function App() {
   return (
     <>
       <main>
-        <ScrollSection>scroll Secttion</ScrollSection>
-        <ScrollSection>scroll Secttion</ScrollSection>
-        <ScrollSection>scroll Secttion</ScrollSection>
+        <ScrollSection></ScrollSection>
+        <ScrollSection>
+          <h1>we are the unloved.</h1>
+        </ScrollSection>
+        <ScrollSection>we are an independent creative studio</ScrollSection>
+        <ScrollSection>
+          we use design and digital to find answers to your questions
+        </ScrollSection>
+        <ScrollSection>creative problem solving is a process,</ScrollSection>
+        <ScrollSection>a process we live by.</ScrollSection>
+        <ScrollSection>are you feeling unloved?</ScrollSection>
+        <ScrollSection>
+          beloved@theunloved.co.uk <br />
+          <br />
+          +44 (0)116 218 2233 <br />
+          <br />
+          instagram twitter
+        </ScrollSection>
+        <ScrollSection>
+          <p>#beautifulbydesign</p>
+        </ScrollSection>
+
         <div className="videopage">
           <video
             autoPlay
