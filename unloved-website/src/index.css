@@ -58,3 +58,25 @@ a {
   align-items: center;
   text-align: center;
 }
+.socials {
+  display: flex;
+  gap: 5vw;
+}
+/* contact hover effects */
+.contactLink::after {
+  position: relative;
+  content: "";
+  display: block;
+  height: 1vh;
+  background-color: var(--gold);
+  width: 100%;
+  transform: translateY(100%);
+  opacity: 0;
+
+  transition: all 250ms ease-in-out;
+}
+.contactLink:hover::after {
+  transform: translateY(0%);
+  top: -5%;
+  opacity: 1;
+}

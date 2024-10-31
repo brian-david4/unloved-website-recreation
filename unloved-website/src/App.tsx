@@ -34,13 +34,22 @@ function App() {
         </ScrollSection>
         <ScrollSection>
           <p className="sectionDetails">
-            <a href="mailto:beloved@theunloved.co.uk">
+            <a className="contactLink" href="mailto:beloved@theunloved.co.uk">
               beloved@theunloved.co.uk
             </a>{" "}
-            <a href="tel:01162182233">+44 (0)116 218 2233</a>
+            <a className="contactLink" href="tel:01162182233">
+              +44 (0)116 218 2233
+            </a>
             <span className="socials">
-              <a href="https://www.instagram.com/the_un.loved/">instagram</a>{" "}
-              <a href="https://x.com/the_un_loved">twitter</a>
+              <a
+                className="contactLink"
+                href="https://www.instagram.com/the_un.loved/"
+              >
+                instagram
+              </a>{" "}
+              <a className="contactLink" href="https://x.com/the_un_loved">
+                twitter
+              </a>
             </span>
           </p>
         </ScrollSection>
