@@ -1,6 +1,6 @@
 .wrapper {
   position: fixed;
-  height: 30vh;
+  height: 15vh;
   width: 100vw;
   left: 0;
   bottom: 0;
@@ -15,8 +15,8 @@
   cursor: pointer;
 }
 .scrollTitle {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 .scrollBtn > img {
-  width: 3vw;
+  width: 2vw;
 }
