@@ -1,5 +1,6 @@
 import ScrollSection from "./components/ScrollSection/ScrollSection";
-import xSvg from "../public/x.svg";
+import xSvg from "/x.svg";
+import { motion } from "framer-motion";
 
 function App() {
   return (
@@ -59,7 +60,16 @@ function App() {
         </ScrollSection>
 
         <div className="videopage">
-          <img src={xSvg} />
+          <motion.img
+            animate={{
+              filter: [`brightness(0.5)`, `brightness(1)`, `brightness(0.5)`],
+            }}
+            transition={{
+              repeat: Infinity,
+              duration: 3,
+            }}
+            src={xSvg}
+          />
           <video
             autoPlay
             loop
