@@ -1,3 +1,4 @@
+import ScrollButton from "./components/ScrollButton/ScrollButton";
 import ScrollSection from "./components/ScrollSection/ScrollSection";
 import xSvg from "/x.svg";
 import { motion } from "framer-motion";
@@ -78,6 +79,8 @@ function App() {
             src="https://theunloved.co.uk/Unloved_Site_V4.1.mp4"
           ></video>
         </div>
+
+        <ScrollButton />
       </main>
     </>
   );
