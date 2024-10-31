@@ -1,4 +1,5 @@
 import ScrollSection from "./components/ScrollSection/ScrollSection";
+import xSvg from "../public/x.svg";
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function App() {
         </ScrollSection>
 
         <div className="videopage">
+          <img src={xSvg} />
           <video
             autoPlay
             loop
