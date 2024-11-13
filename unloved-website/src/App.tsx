@@ -1,9 +1,18 @@
+import { useEffect, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import ScrollButton from "./components/ScrollButton/ScrollButton";
 import ScrollSection from "./components/ScrollSection/ScrollSection";
 import xSvg from "/x.svg";
-import { motion } from "framer-motion";
 
 function App() {
+  const bottomRef = useRef<HTMLDivElement>(null!);
+
+  const isInView = useInView(bottomRef, { amount: 1 });
+
+  useEffect(() => {
+    console.log(isInView);
+  }, [isInView]);
+
   return (
     <>
       <main>
@@ -56,9 +65,11 @@ function App() {
             </span>
           </p>
         </ScrollSection>
-        <ScrollSection>
-          <p className="sectionDetails">#beautifulbydesign</p>
-        </ScrollSection>
+        <div ref={bottomRef} className="finalSectionWrapper">
+          <ScrollSection>
+            <p className="sectionDetails">#beautifulbydesign</p>
+          </ScrollSection>
+        </div>
 
         <div className="videopage">
           <motion.img
@@ -80,7 +91,7 @@ function App() {
           ></video>
         </div>
 
-        <ScrollButton />
+        <ScrollButton bottomInView={isInView} />
       </main>
     </>
   );
